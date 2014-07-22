@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db95e4a7-9a25-4eb6-bbf0-4263fce2944e" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/RandomChests.java" afterPath="$PROJECT_DIR$/src/main/java/com/drewhiggins/bukkit/RandomChests/RandomChests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/drewhiggins/bukkit/RandomChests/RandomChests.java" afterPath="$PROJECT_DIR$/src/main/java/com/drewhiggins/bukkit/RandomChests/RandomChests.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Random Chests.iws" />
@@ -37,28 +36,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RandomChests.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="RandomChests.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/drewhiggins/bukkit/RandomChests/RandomChests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="795">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.44015443" vertical-offset="18" max-vertical-offset="795">
+              <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#571#847#0" expanded="true" />
                 <element signature="e#836#837#0" expanded="true" />
-                <element signature="e#908#909#0" expanded="true" />
-                <element signature="e#976#977#0" expanded="true" />
+                <element signature="e#910#911#0" expanded="true" />
+                <element signature="e#978#979#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plugin.yml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.039893616" vertical-offset="0" max-vertical-offset="752">
-              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -81,6 +70,7 @@
         <option value="$PROJECT_DIR$/src/main/java/ChestSpawnTask.java" />
         <option value="$PROJECT_DIR$/src/main/java/RandomChests.java" />
         <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/drewhiggins/bukkit/RandomChests/RandomChests.java" />
       </list>
     </option>
   </component>
@@ -372,7 +362,11 @@
       <created>1406053421385</created>
       <updated>1406053421385</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added package for java files">
+      <created>1406053530136</created>
+      <updated>1406053530136</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -446,8 +440,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#571#847#0" expanded="true" />
             <element signature="e#836#837#0" expanded="true" />
-            <element signature="e#908#909#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#978#979#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -460,25 +454,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/drewhiggins/bukkit/RandomChests/RandomChests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="795">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#571#847#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-            <element signature="e#908#909#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.039893616" vertical-offset="0" max-vertical-offset="752">
           <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/drewhiggins/bukkit/RandomChests/RandomChests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44015443" vertical-offset="18" max-vertical-offset="795">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#571#847#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#978#979#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

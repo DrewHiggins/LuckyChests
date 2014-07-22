@@ -22,7 +22,7 @@ public class RandomChests extends JavaPlugin {
                 Location randomLocation = getRandomLocation();
                 Bukkit.getServer().broadcastMessage("A new chest has spawned at " + locationToString(randomLocation));
             }
-        }, 0L, 20L);
+        }, 0L, 1200L);
     }
 
     @Override
