@@ -2,7 +2,9 @@ package com.drewhiggins.bukkit.RandomChests;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
+import org.bukkit.Material;
 import org.bukkit.World;
+import org.bukkit.block.Block;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitScheduler;
 
@@ -20,9 +22,9 @@ public class RandomChests extends JavaPlugin {
             @Override
             public void run() {
                 Location randomLocation = getRandomLocation();
-                Bukkit.getServer().broadcastMessage("A new chest has spawned at " + locationToString(randomLocation));
+                spawnChest(randomLocation);
             }
-        }, 0L, 1200L);
+        }, 0L, 2400L); // spawns every 2400 ticks or 2 minutes
     }
 
     @Override
@@ -32,16 +34,20 @@ public class RandomChests extends JavaPlugin {
 
     public Location getRandomLocation() {
         Random random = new Random();
-        double randX = random.nextDouble();
-        double initRandY = random.nextDouble();
-        double randZ = random.nextDouble();
-        Location initLoc = new Location(world, randX, initRandY, randZ);
-        double randY = world.getHighestBlockYAt(initLoc);
+        int randX = random.nextInt();
+        int randZ = random.nextInt();
+        int randY = world.getHighestBlockYAt(randX, randZ);
         return new Location(world, randX, randY, randZ);
     }
 
     public String locationToString(Location location) {
         return "(X: " + location.getX() + ", Y: " +location.getY() + ", Z: " + location.getZ() + ")";
+    }
+
+    public void spawnChest(Location location) {
+        Block block = location.getBlock();
+        block.setType(Material.CHEST);
+        Bukkit.getServer().broadcastMessage("A new chest has spawned at " + locationToString(location));
     }
 
 }
