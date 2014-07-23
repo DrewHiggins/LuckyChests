@@ -11,9 +11,18 @@ unspawnPreviousChest: false
 
 # items that chests can spawn (use names, not ID numbers)
 allowedItems:
-  - cauldron
-  - saddle
-  - cocoa
+  - diamond
+  - dirt
+  - stone
 
-# nae of the world where you will spawn chests
+# number of item slots per spawned chest (default is 3)
+numItems: 3
+
+# name of the world where you will spawn chests (the folder name)
 world: world
+
+# spawn range extrema (default: X: -25000 - 25000, Z: -25000 - 25000)
+minX: -25000
+maxX: 25000
+minZ: -25000
+maxZ: 25000

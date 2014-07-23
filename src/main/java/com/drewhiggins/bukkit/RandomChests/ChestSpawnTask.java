@@ -6,6 +6,7 @@ import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.block.Chest;
+import org.bukkit.entity.Item;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -20,20 +21,26 @@ public class ChestSpawnTask extends BukkitRunnable{
     private boolean unspawnPreviousChest;
     private List<Material> allowedItems;
     private World world;
+    private int numItems;
 
     // range extrema for locations randomly generated
-    private final int MAX_X = 25000;
-    private final int MAX_Z = 25000;
-    private final int MIN_X = -25000;
-    private final int MIN_Z = -25000;
+    private int MIN_X;
+    private int MAX_X;
+    private int MIN_Z;
+    private int MAX_Z;
 
     private Location currentLocation; // stores the location of the current chest
 
-    public ChestSpawnTask(JavaPlugin plugin, boolean unspawnPreviousChest, List<Material> allowedItems, World world) {
+    public ChestSpawnTask(JavaPlugin plugin, boolean unspawnPreviousChest, List<Material> allowedItems, int numItems, World world, int[] extrema) {
         this.plugin = plugin;
         this.unspawnPreviousChest = unspawnPreviousChest;
         this.allowedItems = allowedItems;
+        this.numItems = numItems;
         this.world = world;
+        this.MIN_X = extrema[0];
+        this.MAX_X = extrema[1];
+        this.MIN_Z = extrema[2];
+        this.MAX_Z = extrema[3];
     }
 
     @Override
@@ -49,13 +56,20 @@ public class ChestSpawnTask extends BukkitRunnable{
         Block block = location.getBlock();
         block.setType(Material.CHEST);
         Chest chest = (Chest)block.getState();
-        chest.getInventory().addItem(new ItemStack(Material.DIAMOND, 64));
+        for (int i = 0; i < numItems; i++) {
+            Random random = new Random();
+            int randIndex = random.nextInt(allowedItems.size());
+            chest.getInventory().addItem(new ItemStack(allowedItems.get(randIndex), 1));
+        }
         Bukkit.getServer().broadcastMessage("A new chest has spawned at " + locationToString(location));
     }
 
     public void unspawnChestAtLocation(Location location) {
         Block block = location.getBlock();
+        Chest chest = (Chest)block.getState();
+        chest.getInventory().clear();
         block.setType(Material.AIR);
+        Bukkit.getServer().broadcastMessage("Chest at " + locationToString(location) + " has despawned!");
     }
 
     public Location getRandomLocation() {
