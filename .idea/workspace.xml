@@ -7,11 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db95e4a7-9a25-4eb6-bbf0-4263fce2944e" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/artifacts/RandomChests_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/LuckyChests_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/drewhiggins/bukkit/LuckyChests/LuckyChests.java" afterPath="$PROJECT_DIR$/src/main/java/com/drewhiggins/bukkit/LuckyChests/LuckyChests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bukkit_bukkit_1_7_9_R0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bukkit_bukkit_1_7_9_R0_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config.yml" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Random Chests.iws" />
@@ -435,12 +430,16 @@
       <created>1406295312355</created>
       <updated>1406295312355</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="removed spawn command (broken)">
+      <created>1406308580433</created>
+      <updated>1406308580433</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -452,6 +451,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -462,7 +462,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -494,7 +493,8 @@
     <MESSAGE value="added configuration" />
     <MESSAGE value="fixed allowedItems and added spawn comand" />
     <MESSAGE value="fixed allowedItems and added spawn command" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed allowedItems and added spawn command" />
+    <MESSAGE value="removed spawn command (broken)" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed spawn command (broken)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

@@ -1,13 +1,13 @@
 # config for Random Chests
 
-# time to delay first item spawn (default is 10 ticks)
+# time to delay first item spawn after the plugin loads (in seconds)
 delayTime: 10
 
-# time between each spawn (default is 2400 ticks)
-spawnTime: 2400
+# time between each spawn (in seconds)
+spawnTime: 120
 
-# set to true if you want only one spawned chest on the map at a time
-unspawnPreviousChest: false
+# set to true if you want only one spawned chest on the map at a time (default: true)
+unspawnPreviousChest: true
 
 # items that chests can spawn (use names, not ID numbers)
 allowedItems:
@@ -15,7 +15,7 @@ allowedItems:
   - dirt
   - stone
 
-# number of item slots per spawned chest (default is 3)
+# number of items per spawned chest (default is 3)
 numItems: 3
 
 # name of the world where you will spawn chests (the folder name)
