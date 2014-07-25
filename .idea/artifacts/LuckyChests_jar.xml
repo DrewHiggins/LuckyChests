@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="RandomChests:jar">
+  <artifact type="jar" name="LuckyChests:jar">
     <output-path>$USER_HOME$/Desktop/bukkit/plugins</output-path>
-    <root id="archive" name="random-chests.jar">
+    <root id="archive" name="LuckyChests.jar">
       <element id="module-output" name="LuckyChests" />
     </root>
   </artifact>

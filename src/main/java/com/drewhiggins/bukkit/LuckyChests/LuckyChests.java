@@ -26,8 +26,8 @@ public class LuckyChests extends JavaPlugin {
         this.saveDefaultConfig();
 
         // loads values from config
-        delayTime = this.getConfig().getLong("delayTime"); // the time the user has selected to delay the first chest spawning
-        spawnTime = this.getConfig().getLong("spawnTime"); // the time the user has selected between chest spawns
+        delayTime = this.getConfig().getLong("delayTime") * 20L; // the time the user has selected to delay the first chest spawning
+        spawnTime = this.getConfig().getLong("spawnTime") * 20L; // the time the user has selected between chest spawns
         unspawnPreviousChest = this.getConfig().getBoolean("unspawnPreviousChest");
         world = Bukkit.getWorld(this.getConfig().getString("world"));
         allowedItemsAsStrings = LuckyChests.this.getConfig().getStringList("allowedItems");
@@ -56,20 +56,6 @@ public class LuckyChests extends JavaPlugin {
     @Override
     public void onDisable() {
         getLogger().info("Random chests has been disabled!");
-    }
-
-    @Override
-    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-        if (cmd.getName().equalsIgnoreCase("lc")) {
-            if (args[0].equalsIgnoreCase("newchest")) {
-                if (sender.hasPermission("luckychests.spawn")) {
-                    new ChestSpawnTask(this, unspawnPreviousChest, allowedItems, numItems, world, extrema).run();
-                    return true;
-                }
-            }
-            return false;
-        }
-        return false;
     }
 
 }
