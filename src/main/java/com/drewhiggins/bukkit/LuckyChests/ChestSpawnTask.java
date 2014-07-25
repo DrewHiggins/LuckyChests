@@ -1,4 +1,4 @@
-package com.drewhiggins.bukkit.RandomChests;
+package com.drewhiggins.bukkit.LuckyChests;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
@@ -6,8 +6,6 @@ import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.block.Chest;
-import org.bukkit.entity.Item;
-import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;

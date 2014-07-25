@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/random-chests.iml" filepath="$PROJECT_DIR$/random-chests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LuckyChests.iml" filepath="$PROJECT_DIR$/LuckyChests.iml" />
     </modules>
   </component>
 </project>

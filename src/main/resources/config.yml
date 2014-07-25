@@ -6,8 +6,9 @@ delayTime: 10
 # time between each spawn (default is 2400 ticks)
 spawnTime: 2400
 
-# set to true if you want only one spawned chest on the map at a time
-unspawnPreviousChest: false
+# set to true if you want only one spawned chest on the map at a time (default: true)
+unspawnPreviousChest: true
+
 
 # items that chests can spawn (use names, not ID numbers)
 allowedItems:

@@ -1,3 +1,10 @@
-name: RandomChests
-main: com.drewhiggins.bukkit.RandomChests.RandomChests
+name: LuckyChests
+main: com.drewhiggins.bukkit.LuckyChests.LuckyChests
 version: 0.0.1
+
+commands:
+  spawn:
+    description: Forces the spawn of a new chest
+    usage: /lc spawn
+    permission: luckychest.spawn
+    permission-message: You don't have permission to do that.
